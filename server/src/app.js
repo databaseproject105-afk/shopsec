@@ -50,7 +50,7 @@ app.use("/api/orders", orderRoutes);
 app.use("/api/admin", adminRoutes);
 
 // Serve built React frontend
-const clientDist = path.join(__dirname, "../../../client/dist");
+const clientDist = path.join(__dirname, "../../client/dist");
 
 app.use(
   express.static(clientDist, {
